@@ -1,1 +1,36 @@
 GET http://localhost:3048/events
+
+### 
+
+POST http://localhost:3048/events
+Content-Type: application/json
+
+{
+    "name": "New Event",
+    "description": "This is a new event",
+    "date": "2017-01-01T00:00:00",
+    "price": 1000
+
+}
+
+###
+
+GET http://localhost:3048/events/44b411f6-9ae6-4759-9ff6-88c99a0bdec4
+
+### 
+
+
+PATCH http://localhost:3048/events/44b411f6-9ae6-4759-9ff6-88c99a0bdec4
+Content-Type: application/json
+
+{
+    "name": "Update Event",
+    "description": "This is a new event",
+    "date": "2017-01-01T00:00:00",
+    "price": 1000
+
+}
+
+###
+
+DELETE http://localhost:3048/events/44b411f6-9ae6-4759-9ff6-88c99a0bdec4

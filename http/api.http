@@ -9,7 +9,7 @@ POST http://localhost:3048/events
 Content-Type: application/json
 
 {
-    "name": "New Event 2",
+    "name": "New Event 3",
     "description": "This is a new event",
     "date": "2017-01-01T00:00:00",
     "price": 1000
@@ -41,3 +41,15 @@ Content-Type: application/json
 ###
 
 DELETE http://localhost:3048/events/{{eventId}}
+
+
+###
+GET http://localhost:3048/events/{{eventId}}/spots
+
+###
+POST http://localhost:3048/events/{{eventId}}/spots
+Content-Type: application/json
+
+{
+    "name": "A1"
+}
